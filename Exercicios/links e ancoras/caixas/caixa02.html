@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grouping tag</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: dimgray;
+      }
+      header {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        margin-left: 10px;
+      }
+      nav {
+        background-color: rgb(97, 96, 96);
+        padding: 3px;
+         /* colocando sombra Shorthand 
+         ordem de escrita
+         inset ou nada para offset
+         deslocamento horizontal
+         deslocamento verticar
+         blur
+         spread
+         color*/
+         box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.44);
+     
+
+      }
+      nav > a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-right: 50px;
+
+       
+      }
+      nav:hover {
+        text-decoration: underline;
+      }
+      main {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+         /* colocando borda Shorthand 
+         ordem de escrita
+         top left
+         top right
+         bottom right
+         bottom left
+         Posso colocar somente dois paramentros com 20px 40px (20px top left e bottom right) (40px top right e bottom left)
+         */
+        border-radius: 10px 20px 30px 40px;
+      }
+      footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 4px;
+        margin: 0px;
+      }
+      footer > p {
+        margin: 0px;
+      }
+      article {
+        background-color: lightgray;
+        padding: 5px;
+      }
+      article > aside {
+        background-color: rgb(125, 123, 123);
+      }
+      div#bola{
+        height: 100px;
+        width:100px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Meu site</h1>
+      <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </nav>
+    </header>
+    <main>
+      <section class="assuntos">
+        <p>Esportes Notícias Tecnologias</p>
+      </section>
+      <section class="noticias">
+        <article>
+          <h2>Notícia sobre o Brasil</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati
+            recusandae magni nam in aperiam voluptatum rerum voluptates,
+            deleniti est. Totam iusto est nobis consectetur cupiditate ullam
+            error eveniet, mollitia eaque!
+          </p>
+          <aside>
+            <p>Artigo escrito por Jose</p>
+          </aside>
+        </article>
+        <article></article>
+      </section>
+    </main>
+    <footer>
+      <p>Desenvolvido por InformalDigital</p>
+    </footer>
+    <div id="bola"></div>
+  </body>
+</html>

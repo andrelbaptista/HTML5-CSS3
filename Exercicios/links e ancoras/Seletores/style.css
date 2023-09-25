@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* tudo que e ID em HTML e # em CSS, so um id por documento html
+    Tudo que e class em HTML e ponto em CSS varias classes em um documento html*/
+
+body{
+    background-color:#B4EDB6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(66, 101, 66);
+}
+
+h1#principal {
+    text-align: center;
+    background-color: #396132;
+    color: white;
+}
+
+h2 {
+    color: #5EA154;
+}
+.basico {
+    color: #5EA154;
+}
+.intermediario {
+    color: #a19d54;
+}
+.avancado {
+    color: #a15454;
+}
+.destaque{
+    background-color:rgba(159, 159, 69, 0.289) ;
+}
