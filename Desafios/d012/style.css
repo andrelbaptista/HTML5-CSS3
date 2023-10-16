@@ -17,14 +17,17 @@
 
   --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 * {
   padding: 0;
   margin: 0;
+  font-size: 1em;
 }
 
 html, body {
   min-height: 100vh;
   background-color: darkgray;
+  font-family: var(--fonte-padrao);
 }
 
 header {
@@ -37,6 +40,7 @@ header > h1 {
   font-family: var(--fonte-titulo);
   font-variant: small-caps;
   padding-top: 50px;
+  font-size: 10vw;
 }
 header > p {
   font-family: var(--fonte-padrao);
@@ -56,6 +60,8 @@ section {
   padding-bottom: 10vh;
   line-height: 2em;
   padding-left: 30px;
+  font-family: var(--fonte-texto);
+  font-size: 3.5vw;
 }
 section.normal {
   background-color: var(--cor3);
@@ -69,7 +75,8 @@ section.imagem {
 
 section.imagem > p {
 background-color: #0000005b;
-width: 400px;
+display: inline-block;
+padding: 5px;
 }
 
 footer {
