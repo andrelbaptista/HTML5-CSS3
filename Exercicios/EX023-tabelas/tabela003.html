@@ -11,12 +11,35 @@
       table {
         width: 500px;
         border: 1px solid black;
+        border-collapse: collapse;
+        position: relative;
+      }
+      caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgrey;
+        border: 1px solid black;
       }
       thead,
       tfoot {
         background-color: red;
         color: white;
       }
+      thead > tr > th {
+        position: sticky;
+        top: -1px;
+        background-color: red ;
+      }
+      tbody > tr:nth-child(even) {
+        background-color: wheat;
+      }
+      /* no lugar de even pode ser -2N */
+      tbody > tr:nth-child(odd) {
+        background-color: grey;
+        font-weight: bold;
+      }
+      /* no lugar de odd pode ser 2N */
       td,
       th {
         border: 1px solid black;
@@ -30,6 +53,7 @@
   <body>
     <!-- Anatomia para tabelas grandes
      TABLE
+        CAPTION
         Thead
            tr, td, th
         Tbody
@@ -38,13 +62,14 @@
             tr, td, th
     -->
     <table>
+      <caption>População das unidades federativas do Brasil</caption>
       <thead>
-        <th>estado</th>
-        <th>população</th>
+        <th scope="col">Estado</th>
+        <th scope="col" style="width: 50px;">População</th>
       </thead>
       <!-- como e semântico o foot pode ser declarado antes -->
       <tfoot>
-        <td>Total de habitantes</td>
+        <th scope="row">Total de habitantes</th>
         <td class="num"><strong>00000</strong></td>
       </tfoot>
       <tbody>
@@ -60,7 +85,154 @@
             <td>Rio de Janeiro</td>
             <td class="num">17 264 943</td>
         </tr>
+        <tr>
+          <td>São Paulo</td>
+          <td class="num">45919 049</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td class="num">21 168 791</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">17 264 943</td>
+        </tr>
+        <tr>
+          <td>São Paulo</td>
+          <td class="num">45919 049</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td class="num">21 168 791</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">17 264 943</td>
+        </tr>
+        <tr>
+          <td>São Paulo</td>
+          <td class="num">45919 049</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td class="num">21 168 791</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">17 264 943</td>
+        </tr>
+        <tr>
+          <td>São Paulo</td>
+          <td class="num">45919 049</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td class="num">21 168 791</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">17 264 943</td>
+        </tr>
+        <tr>
+          <td>São Paulo</td>
+          <td class="num">45919 049</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td class="num">21 168 791</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">17 264 943</td>
+        </tr>
+        <tr>
+          <td>São Paulo</td>
+          <td class="num">45919 049</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td class="num">21 168 791</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">17 264 943</td>
+        </tr>
+        <tr>
+          <td>São Paulo</td>
+          <td class="num">45919 049</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td class="num">21 168 791</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">17 264 943</td>
+        </tr>
+        <tr>
+          <td>São Paulo</td>
+          <td class="num">45919 049</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td class="num">21 168 791</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">17 264 943</td>
+        </tr>
+        <tr>
+          <td>São Paulo</td>
+          <td class="num">45919 049</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td class="num">21 168 791</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">17 264 943</td>
+        </tr>
+        <tr>
+          <td>São Paulo</td>
+          <td class="num">45919 049</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td class="num">21 168 791</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">17 264 943</td>
+        </tr>
+        <tr>
+          <td>São Paulo</td>
+          <td class="num">45919 049</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td class="num">21 168 791</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">17 264 943</td>
+        </tr>
       </tbody>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut quaerat saepe est facere, in, excepturi similique beatae expedita iste cupiditate? Iure ducimus officia neque quasi beatae soluta consectetur dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facere natus placeat in facilis vero eligendi reiciendis. Nam debitis delectus quasi animi! Facilis cum libero sed, fugiat aspernatur excepturi consequuntur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque mollitia magni sint possimus nobis repellat molestiae sapiente officiis atque, eaque vel amet nesciunt animi asperiores a dignissimos! Ratione, id.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut quaerat saepe est facere, in, excepturi similique beatae expedita iste cupiditate? Iure ducimus officia neque quasi beatae soluta consectetur dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facere natus placeat in facilis vero eligendi reiciendis. Nam debitis delectus quasi animi! Facilis cum libero sed, fugiat aspernatur excepturi consequuntur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque mollitia magni sint possimus nobis repellat molestiae sapiente officiis atque, eaque vel amet nesciunt animi asperiores a dignissimos! Ratione, id.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut quaerat saepe est facere, in, excepturi similique beatae expedita iste cupiditate? Iure ducimus officia neque quasi beatae soluta consectetur dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facere natus placeat in facilis vero eligendi reiciendis. Nam debitis delectus quasi animi! Facilis cum libero sed, fugiat aspernatur excepturi consequuntur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque mollitia magni sint possimus nobis repellat molestiae sapiente officiis atque, eaque vel amet nesciunt animi asperiores a dignissimos! Ratione, id.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut quaerat saepe est facere, in, excepturi similique beatae expedita iste cupiditate? Iure ducimus officia neque quasi beatae soluta consectetur dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facere natus placeat in facilis vero eligendi reiciendis. Nam debitis delectus quasi animi! Facilis cum libero sed, fugiat aspernatur excepturi consequuntur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque mollitia magni sint possimus nobis repellat molestiae sapiente officiis atque, eaque vel amet nesciunt animi asperiores a dignissimos! Ratione, id.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut quaerat saepe est facere, in, excepturi similique beatae expedita iste cupiditate? Iure ducimus officia neque quasi beatae soluta consectetur dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facere natus placeat in facilis vero eligendi reiciendis. Nam debitis delectus quasi animi! Facilis cum libero sed, fugiat aspernatur excepturi consequuntur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque mollitia magni sint possimus nobis repellat molestiae sapiente officiis atque, eaque vel amet nesciunt animi asperiores a dignissimos! Ratione, id.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut quaerat saepe est facere, in, excepturi similique beatae expedita iste cupiditate? Iure ducimus officia neque quasi beatae soluta consectetur dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facere natus placeat in facilis vero eligendi reiciendis. Nam debitis delectus quasi animi! Facilis cum libero sed, fugiat aspernatur excepturi consequuntur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque mollitia magni sint possimus nobis repellat molestiae sapiente officiis atque, eaque vel amet nesciunt animi asperiores a dignissimos! Ratione, id.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut quaerat saepe est facere, in, excepturi similique beatae expedita iste cupiditate? Iure ducimus officia neque quasi beatae soluta consectetur dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facere natus placeat in facilis vero eligendi reiciendis. Nam debitis delectus quasi animi! Facilis cum libero sed, fugiat aspernatur excepturi consequuntur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque mollitia magni sint possimus nobis repellat molestiae sapiente officiis atque, eaque vel amet nesciunt animi asperiores a dignissimos! Ratione, id.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut quaerat saepe est facere, in, excepturi similique beatae expedita iste cupiditate? Iure ducimus officia neque quasi beatae soluta consectetur dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facere natus placeat in facilis vero eligendi reiciendis. Nam debitis delectus quasi animi! Facilis cum libero sed, fugiat aspernatur excepturi consequuntur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque mollitia magni sint possimus nobis repellat molestiae sapiente officiis atque, eaque vel amet nesciunt animi asperiores a dignissimos! Ratione, id.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut quaerat saepe est facere, in, excepturi similique beatae expedita iste cupiditate? Iure ducimus officia neque quasi beatae soluta consectetur dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facere natus placeat in facilis vero eligendi reiciendis. Nam debitis delectus quasi animi! Facilis cum libero sed, fugiat aspernatur excepturi consequuntur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque mollitia magni sint possimus nobis repellat molestiae sapiente officiis atque, eaque vel amet nesciunt animi asperiores a dignissimos! Ratione, id.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut quaerat saepe est facere, in, excepturi similique beatae expedita iste cupiditate? Iure ducimus officia neque quasi beatae soluta consectetur dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facere natus placeat in facilis vero eligendi reiciendis. Nam debitis delectus quasi animi! Facilis cum libero sed, fugiat aspernatur excepturi consequuntur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque mollitia magni sint possimus nobis repellat molestiae sapiente officiis atque, eaque vel amet nesciunt animi asperiores a dignissimos! Ratione, id.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut quaerat saepe est facere, in, excepturi similique beatae expedita iste cupiditate? Iure ducimus officia neque quasi beatae soluta consectetur dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facere natus placeat in facilis vero eligendi reiciendis. Nam debitis delectus quasi animi! Facilis cum libero sed, fugiat aspernatur excepturi consequuntur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque mollitia magni sint possimus nobis repellat molestiae sapiente officiis atque, eaque vel amet nesciunt animi asperiores a dignissimos! Ratione, id.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut quaerat saepe est facere, in, excepturi similique beatae expedita iste cupiditate? Iure ducimus officia neque quasi beatae soluta consectetur dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facere natus placeat in facilis vero eligendi reiciendis. Nam debitis delectus quasi animi! Facilis cum libero sed, fugiat aspernatur excepturi consequuntur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque mollitia magni sint possimus nobis repellat molestiae sapiente officiis atque, eaque vel amet nesciunt animi asperiores a dignissimos! Ratione, id.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut quaerat saepe est facere, in, excepturi similique beatae expedita iste cupiditate? Iure ducimus officia neque quasi beatae soluta consectetur dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facere natus placeat in facilis vero eligendi reiciendis. Nam debitis delectus quasi animi! Facilis cum libero sed, fugiat aspernatur excepturi consequuntur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque mollitia magni sint possimus nobis repellat molestiae sapiente officiis atque, eaque vel amet nesciunt animi asperiores a dignissimos! Ratione, id.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut quaerat saepe est facere, in, excepturi similique beatae expedita iste cupiditate? Iure ducimus officia neque quasi beatae soluta consectetur dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facere natus placeat in facilis vero eligendi reiciendis. Nam debitis delectus quasi animi! Facilis cum libero sed, fugiat aspernatur excepturi consequuntur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque mollitia magni sint possimus nobis repellat molestiae sapiente officiis atque, eaque vel amet nesciunt animi asperiores a dignissimos! Ratione, id.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut quaerat saepe est facere, in, excepturi similique beatae expedita iste cupiditate? Iure ducimus officia neque quasi beatae soluta consectetur dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facere natus placeat in facilis vero eligendi reiciendis. Nam debitis delectus quasi animi! Facilis cum libero sed, fugiat aspernatur excepturi consequuntur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque mollitia magni sint possimus nobis repellat molestiae sapiente officiis atque, eaque vel amet nesciunt animi asperiores a dignissimos! Ratione, id.</p>
   </body>
 </html>
