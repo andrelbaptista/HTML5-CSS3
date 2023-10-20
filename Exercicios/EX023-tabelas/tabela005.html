@@ -33,15 +33,18 @@
         .vertical {
             background-color: darkgray;
         }
-        .lado1 {
+        .borda1 {
             border-left: 3px double  black;
         }
-        .lado2 {
+        .borda2 {
             border-left: 3px double  black;
             border-bottom: 3px double  black;
         }
-        .lado3 {
+        .borda3 {
             border-bottom: 3px double  black;
+        }
+        .borda4 {
+            border-top: 3px double  black;
         }
         #mulher {
             background-color: pink;
@@ -60,16 +63,20 @@
             <tr>
                 <th class="vertical" scope="col">Grupos</th>
                 <th class="vertical" scope="col">Nomes</th>
-                <th class="vertical" colspan="3" scope="col">Filmes</th>
+                <th class="vertical" colspan="3" scope="colgroup">Filmes</th>
             </tr>
         </thead>
+        <tfoot>
+            <th colspan="4" scope="row">Total</th>
+            <td class="borda4">00000</td>
+        </tfoot>
         <tbody>
             <tr>
-                <th id="mulher" rowspan="3" scope="row">Mulheres</th>
+                <th id="mulher" rowspan="3" scope="rowgroup">Mulheres</th>
 
                 <td id="mulher" >Maria Santos</td>
 
-                <td id="mulher"  class="lado1">Alien</td>
+                <td id="mulher"  class="borda1">Alien</td>
 
                 <td id="mulher" >Rambo</td>
 
@@ -78,36 +85,36 @@
             <tr>
                 <td id="mulher" colspan="1">Beatriz Souza</td>
 
-                <td id="mulher" class="lado1">Hulk</td>
+                <td id="mulher" class="borda1">Hulk</td>
 
                 <td id="mulher">Inception</td>
 
                 <td id="mulher">Batman</td>
             </tr>
             <tr>
-                <td id="mulher" class="lado2" >Cláudia Melo</td>
+                <td id="mulher" class="borda2" >Cláudia Melo</td>
 
-                <td id="mulher" class="lado2">Obilvion</td>
+                <td id="mulher" class="borda2">Obilvion</td>
 
-                <td id="mulher" class="lado3">Matrix</td>
+                <td id="mulher" class="borda3">Matrix</td>
 
-                <td id="mulher" class="lado3">Big Hero</td>
+                <td id="mulher" class="borda3">Big Hero</td>
             </tr>
             <tr>
-                <th id="homen" rowspan="3" scope="row">Homens</th>
+                <th id="homen" rowspan="3" scope="rowgroup">Homens</th>
 
                 <td id="homen">Bruno Mendonça</td>
 
-                <td id="homen" class="lado1">Intocáveis</td>
+                <td id="homen" class="borda1">Intocáveis</td>
 
                 <td id="homen" >Amnésia</td>
 
                 <td id="homen">Gladiador</td>
             </tr>
             <tr>
-                <td id="homen" class="lado1">Daniel Lourenço</td>
+                <td id="homen" class="borda1">Daniel Lourenço</td>
 
-                <td id="homen" class="lado1">Wall-E</td>
+                <td id="homen" class="borda1">Wall-E</td>
 
                 <td id="homen">Oldboy</td>
 
@@ -116,10 +123,10 @@
             <tr>
                 <td id="homen">Fabiano Mota</td>
 
-                <td id="homen" class="lado1">Star Wars-5</td>
+                <td id="homen" class="borda1">Star Wars-5</td>
 
                 <td id="homen">Taxi Driver</td>
-                
+
                 <td id="homen">Toy Story</td>
             </tr>
         </tbody>
