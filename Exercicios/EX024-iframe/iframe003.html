@@ -4,8 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe {
+            width: 95vw;
+            height: 450px;
+            border: 2px solid black;
+        }
+    </style>
 </head>
 <body>
+    <h1>Faça uma escolha</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum accusantium modi rerum sed id amet libero a quidem cumque, doloribus consectetur sit repellat necessitatibus eveniet, minima alias quo quibusdam ea.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae fugit doloremque quas aut quod quam, beatae, at corrupti numquam quisquam quidem deserunt, inventore iste natus? Eius ea accusamus iste saepe? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, distinctio optio ad officiis tempora ipsam esse placeat quam, ullam quae facere omnis. Hic quibusdam molestias modi voluptatem blanditiis fuga natus.</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma página </h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum accusantium modi rerum sed id amet libero a quidem cumque, doloribus consectetur sit repellat necessitatibus eveniet, minima alias quo quibusdam ea.</p>">
+
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut exercitationem ut aperiam voluptas accusantium est ducimus nam, id tempore sint tenetur deserunt quasi ipsam aliquam illum aspernatur laboriosam sequi! Nobis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi quam quaerat, obcaecati veritatis tenetur illo consectetur voluptatem nobis non veniam vero alias? Eum incidunt laudantium odio aliquid, inventore est odit!</p>
 </body>
 </html>
